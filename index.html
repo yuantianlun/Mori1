@@ -181,11 +181,12 @@
             </div>
         </li>
         <li class="section4UL">
-            <div class="section4ULL">拥有四十年美容经验、并持有众多国际一线美容证书，TBC认证首席讲师，首次对外传授上百家高端日式美容沙龙的内部独家手法，技术更珍贵，教学更专业，更注重手法实操
-            </div>
             <div class="section4ULR">
                 <img src="./img/adv2.png" alt="">
             </div>
+            <div class="section4ULL">拥有四十年美容经验、并持有众多国际一线美容证书，TBC认证首席讲师，首次对外传授上百家高端日式美容沙龙的内部独家手法，技术更珍贵，教学更专业，更注重手法实操
+            </div>
+
         </li>
         <li class="section4UL">
             <div class="section4ULL">集团公司自主研发高级私人订制的产品，为每一位客户制作出只属于他的私有产品，为学员提供核心竞争力。产品拥有唯一的进货渠道，保证高端品质美肌中心。</div>
@@ -195,7 +196,7 @@
         </li>
     </ul>
 </div>
-<div class="sectiion5">
+<div class="section5">
     <table class="biaoti">
         <tbody>
         <tr>
@@ -231,12 +232,12 @@
                 <img src="./img/si2.png" alt="">
             </div>
         </div>
-        <div class="sectiion5More">
+        <div class="section5More">
             <img src="" alt="">
         </div>
     </div>
 </div>
-<div class="sectiion6">
+<div class="section6">
     <table class="biaoti">
         <tbody>
         <tr>
@@ -259,28 +260,28 @@
         </tr>
         </tbody>
     </table>
-    <ul class="sectiion6U">
-        <li class="sectiion6UL">
-            <div class="sectiion6ULL">
+    <ul class="section6U">
+        <li class="section6UL">
+            <div class="section6ULL">
                 <img src="./img/ti1.jpg" alt="">
             </div>
-<!--            <div class="sectiion6ULR">-->
-<!--                <div class="sectiion6ULRT"></div>-->
-<!--                <div class="sectiion6ULRB"><a href="">了解详情</a></div>-->
+<!--            <div class="section6ULR">-->
+<!--                <div class="section6ULRT"></div>-->
+<!--                <div class="section6ULRB"><a href="">了解详情</a></div>-->
 <!--            </div>-->
         </li>
-        <li class="sectiion6UL">
-            <div class="sectiion6ULL">
+        <li class="section6UL">
+            <div class="section6ULL">
                 <img src="./img/ti2.jpg" alt="">
             </div>
-            <!--            <div class="sectiion6ULR">-->
-            <!--                <div class="sectiion6ULRT"></div>-->
-            <!--                <div class="sectiion6ULRB"><a href="">了解详情</a></div>-->
+            <!--            <div class="section6ULR">-->
+            <!--                <div class="section6ULRT"></div>-->
+            <!--                <div class="section6ULRB"><a href="">了解详情</a></div>-->
             <!--            </div>-->
         </li>
     </ul>
 </div>
-<div class="sectiion7">
+<div class="section7">
     <table class="biaoti">
         <tbody>
         <tr>
@@ -320,12 +321,15 @@
 
             </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
-    <div class="sectiion7Btn">
+    <div class="section7Btn">
         <a href="">点击查看</a>
     </div>
 </div>
-<div class="sectiion8">
+<div class="section8">
     <table class="biaoti">
         <tbody>
         <tr>
@@ -348,19 +352,19 @@
         </tr>
         </tbody>
     </table>
-    <ul class="sectiion8U">
-        <li class="sectiion8UL">
-            <div class="sectiion8UL1">
+    <ul class="section8U">
+        <li class="section8UL">
+            <div class="section8UL1">
                 <img src="./img/hp4.jpg" alt="">
                 <img src="./img/hp5.jpg" alt="">
             </div>
-            <div class="sectiion8UL2">
+            <div class="section8UL2">
                 <img src="./img/hp6.jpg" alt="">
             </div>
         </li>
     </ul>
 </div>
-<div class="sectiion9">
+<div class="section9">
     <table class="biaoti">
         <tbody>
         <tr>
@@ -485,3 +489,50 @@
 </div>
 </body>
 </html>
+<script>
+    certifySwiper = new Swiper('#certify .swiper-container', {
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        loop: true,
+        loopedSlides: 9,
+        autoplay: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            //clickable :true,
+        },
+        on: {
+            progress: function (progress) {
+                for (i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i);
+                    var slideProgress = this.slides[i].progress;
+                    modify = 1;
+                    if (Math.abs(slideProgress) > 1) {
+                        modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                    }
+                    translate = slideProgress * modify * 260 + 'px';
+                    scale = 1 - Math.abs(slideProgress) / 5;
+                    zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                    slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                    slide.css('zIndex', zIndex);
+                    slide.css('opacity', 1);
+                    if (Math.abs(slideProgress) > 3) {
+                        slide.css('opacity', 0);
+                    }
+                }
+            },
+            setTransition: function (transition) {
+                for (var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i)
+                    slide.transition(transition);
+                }
+
+            }
+        }
+
+    })
+</script>

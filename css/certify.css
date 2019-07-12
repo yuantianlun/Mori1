@@ -4,6 +4,7 @@
 #certify {
 	position: relative;
 	width: 1200px;
+	height: 500px;
 	margin: 0 auto
 }
 
@@ -14,8 +15,8 @@
 #certify  .swiper-slide {
 	width: 520px;
 	height: 408px;
-	background: #fff;
-	box-shadow: 0 8px 30px #ddd;
+	/*background: #fff;*/
+	/*box-shadow: 0 8px 30px #ddd;*/
 }
 #certify  .swiper-slide img{
 	display:block;
@@ -52,7 +53,7 @@
 	left: -30px;
 	width: 45px;
 	height: 45px;
-	background: url(../images/wm_button_icon.png) no-repeat;
+	background: url(../img/wm_button_icon.png) no-repeat;
 	background-position: 0 0;
 	background-size: 100%;
 }
@@ -66,7 +67,7 @@
 	right: -30px;
 	width: 45px;
 	height: 45px;
-	background: url(../images/wm_button_icon.png) no-repeat;
+	background: url(../img/wm_button_icon.png) no-repeat;
 	background-position: 0 -93px;
 	background-size: 100%;
 }
