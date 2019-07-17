@@ -12,24 +12,28 @@
     <script src="js/swiper.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/anime.min.js"></script>
 </head>
 <body>
 <div class="bannerbox">
+    <a name="shouye"></a>
     <img src="./img/banner.jpg" alt="" style="width: 100%;height: 100%;">
     <ul class="nav">
-        <li class="nav1"><a href="">网站首页</a></li>
-        <li class="nav1"><a href="">产品展示</a></li>
-        <li class="nav1"><a href="">关于我们</a></li>
+        <li class="nav1"><a href="#shouye">网站首页</a></li>
+        <li class="nav1"><a href="#chanpin">产品展示</a></li>
+        <li class="nav1"><a href="#guanyu">关于我们</a></li>
         <li class="nav1">
             <a href=""><img src="" alt=""></a>
         </li>
-        <li class="nav1"><a href="">培训课程</a></li>
-        <li class="nav1"><a href="">联系我们</a></li>
+        <li class="nav1"><a href="#peixun">培训课程</a></li>
+        <li class="nav1"><a href="#lianxi">联系我们</a></li>
         <li class="nav1"><a href="">日本官网</a></li>
 
     </ul>
 </div>
 <div class="section1">
+    <a name="chanpin"></a>
+
     <table class="biaoti">
         <tbody>
         <tr>
@@ -101,8 +105,21 @@
         </tr>
         </tbody>
     </table>
+    <div class="wrapper">
+        <div class="boxes">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+    </div>
 </div>
 <div class="section3">
+    <a name="guanyu"></a>
     <table>
         <tbody>
         <tr>
@@ -133,9 +150,9 @@
                     <tr>
                         <td align="center" style="line-height:2.5em">
 <!--                            <br>-->
-                            The only designated cooperative institution of Coeur.Project in China<br>
+                            The only designated cooperative institution of TBC in China<br>
                             Established a Chinese campus in Suzhou. Jiangsu province, and established<br>
-                            training system for Japanese <br>
+                            training system for Japanese salons<br>
                             We committed to build the most professional Japanese skin management<br>
                             teaching brand
                         </td>
@@ -220,20 +237,22 @@
         </tbody>
     </table>
     <div class="section5box">
-        <div class="section5boxL"></div>
-        <div class="section5boxR"></div>
-        <div class="section5T">
-            <div class="section5TL">
-                <span>1.皮肤管理课程</span>
-                <img src="./img/si1.png" alt="">
-            </div>
-            <div class="section5TR">
-                <span>2.美甲美睫课程</span>
-                <img src="./img/si2.png" alt="">
-            </div>
+        <div class="section5boxT">皮肤管理课程</div>
+        <div class="section5boxC">
+            <img src="./img/si1.jpg" alt="">
         </div>
+<!--        <div class="section5T">-->
+<!--            <div class="section5TL">-->
+<!--                <span>1.皮肤管理课程</span>-->
+<!--                <img src="./img/si1.png" alt="">-->
+<!--            </div>-->
+<!--            <div class="section5TR">-->
+<!--                <span>2.美甲美睫课程</span>-->
+<!--                <img src="./img/si2.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="section5More">
-            <img src="" alt="">
+            <img src="./img/section5More.png" alt="">
         </div>
     </div>
 </div>
@@ -355,6 +374,15 @@
     <ul class="section8U">
         <li class="section8UL">
             <div class="section8UL1">
+                <img src="./img/hp1.jpg" alt="">
+                <img src="./img/hp2.jpg" alt="">
+            </div>
+            <div class="section8UL2">
+                <img src="./img/hp3.jpg" alt="">
+            </div>
+        </li>
+        <li class="section8UL">
+            <div class="section8UL1">
                 <img src="./img/hp4.jpg" alt="">
                 <img src="./img/hp5.jpg" alt="">
             </div>
@@ -362,9 +390,11 @@
                 <img src="./img/hp6.jpg" alt="">
             </div>
         </li>
+
     </ul>
 </div>
 <div class="section9">
+    <a name="peixun"></a>
     <table class="biaoti">
         <tbody>
         <tr>
@@ -387,20 +417,22 @@
         </tr>
         </tbody>
     </table>
-    <img src="./img/curriculum.jpg" alt="">
-
+    <div class="section9img">
+        <img class="" src="./img/curriculum.jpg" alt="">
+    </div>
 </div>
 <div class="footer">
+    <a name="lianxi"></a>
     <table class="footer1">
         <tbody>
+        <tr><td height="50" align="center" bgcolor="#35383D"></td></tr>
         <tr>
-            <a href="" name="5"></a>
             <td align="center" bgcolor="#35383D">
                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
                     <tbody>
                     <tr>
                         <td align="center">
-                            <table width="1200" border="0" cellpadding="0" cellspacing="0">
+                            <table  border="0" cellpadding="0" cellspacing="0" style="width: 90%;margin: 0 auto;">
                                 <tbody>
                                 <tr>
                                     <td height="56" valign="top" background="img/more5.jpg">
@@ -439,14 +471,17 @@
                                                 <td width="201" align="left"><a
                                                         href=""><img
                                                         src="img/no5-1.jpg" width="201" height="201" border="0"></a>
+                                                    <p style="text-align: center;color: #ffffff;">公众号</p>
                                                 </td>
                                                 <td width="25" align="left">&nbsp;</td>
-                                                <td align="left"><a href=""><img
+                                                <td align="left" width="201"><a href=""><img
                                                         src="img/no5-2.jpg" width="201" height="201" border="0"></a>
+                                                    <p style="text-align: center;color: #ffffff;">微博</p>
                                                 </td>
                                                 <td width="25" align="left">&nbsp;</td>
-                                                <td align="left"><a href=""><img
+                                                <td align="left" width="201"><a href=""><img
                                                         src="img/no5-3.jpg" width="201" height="201" border="0"></a>
+                                                    <p style="text-align: center;color: #ffffff;">小红书</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -454,13 +489,11 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="3" align="left" style="color:#CCC; line-height:1.9em">
-                                                    咨询热线：186
-                                                    5111 0899<br>
-                                                    微信：keyanli2018<br>
-                                                    微博：Coeur日本皮肤管理国内分社<br>
-                                                    地址：江苏省苏州市工业园区苏绣路58号苏州中心写字楼A座1705 <br>
-                                                    邮箱：18962198781@163.com<br>
-                                                    邮编：215000
+                                                    微信：senmori4010<br>
+                                                    微博：森Mori日式沙龙美学院<br>
+                                                    地址：苏州市工业园区星桂街33号 凤凰国际大厦4008-4010 <br>
+                                                    合作商网址：http://www.tbc.co.jp/<br>
+
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -482,7 +515,7 @@
             <td height="1" align="center" bgcolor="#5A6069"></td>
         </tr>
         <tr>
-            <td height="60" align="center" bgcolor="#35383D" style="color:#CCC">版权所有：科颜丽科技美容有限公司</td>
+            <td height="60" align="center" bgcolor="#35383D" style="color:#CCC"></td>
         </tr>
         </tbody>
     </table>
@@ -534,5 +567,29 @@
             }
         }
 
+    })
+</script>
+<script>
+    xTrans =  [];
+    anime.set('.box',{
+        translateX: function(el, i, l) {
+            xTrans[i]={x : i * 300};
+            return i * 300;
+        },
+    });
+
+    anime({
+        targets: xTrans,
+        duration: 10000, //走一周持续时间
+        easing: 'linear',
+        x: "+=2400",
+        loop: true,
+        update: function(anim) {
+            anime.set('.box', {
+                translateX:function(el, i, l){
+                    return xTrans[i].x%2400
+                }
+            });
+        }
     })
 </script>
